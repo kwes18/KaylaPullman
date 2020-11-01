@@ -4,19 +4,126 @@ h1{
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-background-color: #7eb6ff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #a0d8f8;
 }
 #kayla{
+  display: flex;
+  justify-self: center;
     border: 2px solid black;
     width: 200px;
     height: 200px;
-    display: flex;
-    align-items: center;
-    align-content: center;
+    margin: 0 auto;
+}
+
+header{
+  padding: 20px;
+  margin: 20px; 
+}
+nav{
+  display: inline-block;
+  width: 100%;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
 }
 
 .link {
-color: #300c94;
-
+color: #0c3c94;
+font: 1.5em sans-serif;
+margin: 0 auto;
 }
+
+.link:hover{
+  color: #037a7e;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* form styles */
+form {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    width: fit-content;
+    /* Form outline */
+    padding: 1em;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 1em;
+  }
+  
+  form > ul {
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  label {
+    margin: 5px;
+    margin-right: 0px;
+    text-align: left;
+  }
+  
+  input, 
+  textarea {
+    margin: 5px;
+    margin-right: 0px;
+    text-align: right; 
+    font: 1em sans-serif;
+    width: auto;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+  
+  input:focus, 
+  textarea:focus {
+    border-color: #0c3c94;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 100%;
+  }
+  
+  .button{
+    width: 100%;
+    margin: 0px; 
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+  }
+
+  button {
+    text-align: center;
+    color: white;
+    background-color: #0c3c94;
+    padding: 5px;
+    width: 25%;
+    border: 1px solid black; 
+    border-radius: 1em;
+    margin-left: 10px;
+    padding: 5px; 
+  }
