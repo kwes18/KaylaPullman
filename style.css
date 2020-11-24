@@ -1,59 +1,93 @@
-h1{
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro {
+    width: auto;
+    height: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 22px;
+    margin: 10px auto;
+    font-size: 14pt;
+}
+
+h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: #a0d8f8;
+h3 {
+    margin-left: 22px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#kayla{
-  display: flex;
-  justify-self: center;
+
+#sub>li {
+    padding-left: 22px;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #a8ceff;
+}
+
+#kayla {
+    display: flex;
+    justify-self: center;
     border: 2px solid black;
     width: 200px;
     height: 200px;
     margin: 0 auto;
 }
 
-header{
-  padding: 20px;
-  margin: 20px; 
-}
-nav{
-  display: inline-block;
-  width: 100%;
+header {
+    padding: 20px;
+    margin: 20px;
 }
 
+nav {
+    display: inline-block;
+    width: 100%;
+    height: 20%;
+}
 
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
+.navbar>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .link {
-color: #0c3c94;
-font: 1.5em sans-serif;
-margin: 0 auto;
+    color: #0c3c94;
+    font: 1.5em sans-serif;
+    margin: 0 auto;
+    font-weight: bold;
 }
 
-.link:hover{
-  color: #037a7e;
+.link:hover {
+    color: #7a00c0;
 }
 
+.selected {
+    font: 1.5em sans-serif;
+    color: #7a00c0;
+    font-weight: bold;
+    margin: 0 auto;
+}
 
 footer {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  padding: 20px;
-  margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 20px;
+    margin: 20px;
 }
 
+
 /* form styles */
+
 form {
     display: flex;
     flex-direction: row;
@@ -65,65 +99,65 @@ form {
     margin: auto;
     border: 1px solid black;
     border-radius: 1em;
-  }
-  
-  form > ul {
+}
+
+form>ul {
     margin: 0px;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-  }
-  
-  li{
+}
+
+form>li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
+}
 
-  label {
+label {
     margin: 5px;
     margin-right: 0px;
     text-align: left;
-  }
-  
-  input, 
-  textarea {
+}
+
+input,
+textarea {
     margin: 5px;
     margin-right: 0px;
-    text-align: right; 
+    text-align: right;
     font: 1em sans-serif;
     width: auto;
     box-sizing: border-box;
     border: 1px solid black;
-  }
-  
-  input:focus, 
-  textarea:focus {
+}
+
+input:focus,
+textarea:focus {
     border-color: #0c3c94;
-  }
-  
-  textarea {
+}
+
+textarea {
     vertical-align: top;
     height: 100%;
-  }
-  
-  .button{
+}
+
+.button {
     width: 100%;
-    margin: 0px; 
+    margin: 0px;
     display: flex;
     flex-direction: row;
     justify-self: center;
-  }
+}
 
-  button {
+button {
     text-align: center;
     color: white;
     background-color: #0c3c94;
     padding: 5px;
     width: 25%;
-    border: 1px solid black; 
+    border: 1px solid black;
     border-radius: 1em;
     margin-left: 10px;
-    padding: 5px; 
-  }
+    padding: 5px;
+}
