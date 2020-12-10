@@ -1,6 +1,13 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
 .content {
     display: flex;
     flex-direction: column;
+    background-color: rgba( 156, 177, 194, 0.85);
 }
 
 #intro {
@@ -15,6 +22,9 @@
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    padding: 1em;
+    margin: 0;
 }
 
 h2 {
@@ -33,7 +43,6 @@ h3 {
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(162, 210, 255);
 }
 
 #up {
@@ -54,17 +63,17 @@ body {
 
 #kayla {
     display: flex;
-    justify-self: center;
+    align-self: center;
     border: 2px solid black;
     width: 200px;
     height: 200px;
-    margin: 0 auto;
+    margin: 1em;
 }
 
 header {
     padding: 20px;
     margin: 0px;
-    background-color: rgb(157, 255, 222);
+    background-color: rgba(215, 123, 58, 0.85);
 }
 
 nav {
@@ -74,26 +83,41 @@ nav {
 
 .navbar>ul {
     list-style: none;
+    padding: 0;
     display: flex;
     justify-content: space-between;
 }
 
+#topimg {
+    padding: 1.5em;
+    background-image: url(./assets/sunset.JPG);
+    background-size: 100% auto;
+    background-blend-mode: lighten;
+}
+
+#topimg>div {
+    display: flex;
+    justify-content: center;
+}
+
 .link {
-    color: #0c3c94;
+    color: black;
     font: 1.5em sans-serif;
     margin: 0 auto;
     font-weight: bold;
 }
 
 .link:hover {
-    color: #430069;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .selected {
     font: 1.5em sans-serif;
-    color: #430069;
+    color: #9CB1C2;
     font-weight: bold;
     margin: 0 auto;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 footer {
@@ -103,7 +127,14 @@ footer {
     padding-top: 20px;
     margin: 0px;
     border: 0px;
-    background-color: rgb(157, 255, 222);
+    background-color: rgba(156, 131, 126, 0.85);
+}
+
+#ftlinks {
+    padding: 0;
+    list-style: none;
+    color: black;
+    margin: 1em;
 }
 
 #ic {
@@ -111,6 +142,7 @@ footer {
     height: auto;
     padding: 10px;
     padding-bottom: 0px;
+    padding-left: 0px;
 }
 
 
@@ -187,5 +219,4 @@ button {
     border: 1px solid black;
     border-radius: 1em;
     margin-left: 10px;
-    padding: 5px;
 }

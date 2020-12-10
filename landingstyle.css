@@ -38,7 +38,7 @@ body {
 }
 
 .section-button {
-    border-radius: 1em;
+    border-radius: 0.5em;
     background: #000000;
     border: 1px solid white;
     padding: 10px;
@@ -51,7 +51,9 @@ body {
 }
 
 .section-button:hover {
-    background: #73adff;
+    background: #9CB1C2;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    border: 1px solid black;
 }
 
 body {
@@ -59,6 +61,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+p {
+    padding-bottom: 1.5em;
 }
 
 @keyframes fade-in {
