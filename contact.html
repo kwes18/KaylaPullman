@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact</title>
-    <meta name="description" content="">
+    <title>Contact | Kayla Weselowski</title>
+    <meta name="description" content="Send an email to Kayla Weselowski to get in contact with her.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" async defer></script>
+    <script src="./index.js" async defer></script>
 </head>
 
 <body>
@@ -17,34 +17,29 @@
 
             <div class="navbar">
                 <ul>
-                    <li><a class="link" href="./home.html">About</a></li>
+                    <li><a class="link" href="./index.html">About</a></li>
                     <li><a class="link" href="./projects.html">Projects</a></li>
-                    <li><a class="link" href="./experience.html">Experience</a></li>
                     <li><a class="selected" href="./contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <form action="form-to-email.php" method="post" name="emailform">
-        <ul>
-            <li>
+    <form action="send" method="post" name="emailform" id="contact" enctype="multipart/form-data">
+        <div style="text-align: center;">
+            
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name">
-            </li>
-            <li>
+                <input type="text" id="name" name="user_name" required>
+            
                 <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_email">
-            </li>
-            <li>
+                <input type="email" id="email" name="user_email" required>
+            
                 <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-            </li>
-            <br>
-            <li class="button">
-                <button type="submit">Send</button>
-            </li>
-        </ul>
+                <textarea id="msg" name="user_message" required></textarea>
+        
+                <button type="submit" value="submit" id="submit">Send</button>
+        
+        </div>
     </form>
 
 </body>
