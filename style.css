@@ -5,88 +5,75 @@ html {
     box-sizing: border-box;
 }
 
-.content {
+body {
     display: flex;
     flex-direction: column;
-    background-color: white;
-}
-
-#intro {
-    width: auto;
-    height: auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 22px;
-    margin: 10px auto;
-    font-size: medium;
+    justify-content: center;
+    font-family: sans-serif;
     line-height: 1.5;
 }
 
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-    padding: 1em;
-    margin: 0;
+header {
+    padding: 24px;
 }
 
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
+.paragraph {
+    width: auto;
+    height: auto;
+    padding: 24px;
+    margin: 10px auto;
+    font-size: medium; 
+}
+
+p, ul {
+     max-width: 800px;
+}
+
+h1 {
     text-align: center;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    padding: 24px;
+    padding-bottom: 0;
+    margin: 0;
+    font-weight: 600;
 }
 
 h3 {
     background-color: rgba(215, 123, 58, 0.85);
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    padding: 8px;
-}
-
-#sub>li {
-    padding-left: 24px;
-}
-
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 16px;
+    margin: 0
 }
 
 #up {
     position: fixed;
-    left: 92%;
+    right: 8px;
     top: 75%;
     width: 48px;
     height: auto;
 }
 
-#down {
-    width: 15%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.button-up {
+    cursor: pointer;
 }
 
 #kayla {
-    display: flex;
-    align-self: center;
+    display: block;
     border: 2px solid black;
     border-radius: 8px;
     width: 200px;
     height: 200px;
-    margin: 24px;
+    margin: 16px auto;
 }
 
 header {
-    border: 2px solid black;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 16px 48px;
     background-color: rgba(215, 123, 58, 0.85);
 }
 
 nav {
     width: 100%;
-    height: auto;
-    
+    height: auto;   
 }
 
 .navbar>ul {
@@ -96,23 +83,20 @@ nav {
     justify-content: space-between;
 }
 
-#topimg {
-    padding: 1.5em;
+.hero {
     background-image: url(./assets/sunset.JPG);
     background-size: 100% auto;
-    background-blend-mode: lighten;
-}
-
-#topimg>div {
-    display: flex;
-    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .link {
     color: black;
-    font: 1.5em sans-serif;
+    font: 24px sans-serif;
     margin: 0 auto;
-    font-weight: bold;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .link:hover {
@@ -121,107 +105,41 @@ nav {
 }
 
 .selected {
-    font: 1.5em sans-serif;
-    color: #9CB1C2;
-    font-weight: bold;
+    color: #9cb1c2;
+    font: 24px sans-serif;
     margin: 0 auto;
+    font-weight: 600;
+    text-decoration: none;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 footer {
     display: flex;
-    padding-top: 10px;
+    flex-direction: column;
+    padding-top: 8px;
     margin: 0px;
-    border: 0px;
     background-color: rgba( 156, 177, 194, 0.85);
 }
 
-#ftlinks {
-    padding: 0;
+footer>ul {
     list-style: none;
     color: black;
-    margin: 1em;
+    margin: 8px;
 }
 
-#ftlinks>ul {
-    margin-bottom: 0;
-}
-
-#ic {
-    width: 35px;
+.icon {
+    width: 32px;
     height: auto;
-    padding: 10px;
+    padding: 8px;
     padding-bottom: 0px;
-    padding-left: 0px;
+    margin-bottom: -4px;
 }
 
-#copy {
-    margin-bottom: 0;
-    margin-top: 2em;
-}
-
-#contact {
-    margin:auto;
-    padding: auto;
-    
-}
-
-/* form styles */
-
-form {
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
-    justify-content: center;
-    width: 50%;
-    /* Form outline */
-    padding: 5px;
-    margin: auto;
-    border: 2px solid black;
-    border-radius: 1em;
-    width:85%;
-}
-
-form>div {
-    margin: 0px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-}
-
-label,input, textarea {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-label {
-    margin-top: 10px;
-    display: block;
-    text-align: left;
-}
-
-input,
-textarea {
-    text-align: left;
-    font: 1em sans-serif;
-    width: auto;
-    box-sizing: border-box;
-    border: 1px solid black;
-    width: 100%; 
-}
-
-button {
+.copy {
     text-align: center;
-    color: black;
-    font-weight: 600;
-    background-color: rgba( 156, 177, 194, 0.85);
-    padding: 10px;
-    width: 25%;
-    border: 1px solid black;
-    border-radius: 1em;
-    margin-top: 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    margin-top: 16px;
 }
 
