@@ -1,25 +1,16 @@
 window.onload = init();
 
 function init() {
-const contact = document.getElementById('contact');
 
-contact.addEventListener('submit', (event) => {
-    event.preventDefault();
-    let mail = new FormData(contact);
+let btnContainer = document.getElementById("navbar");
 
-    sendMail(mail);
-    
-})
+let links = btnContainer.getElementsByClassName("link");
 
-const sendMail = (mail) => {
-    fetch("https://kwes18.github.io/contact.html/send", {
-      method: "post",
-      body: mail,  
-    }).then((response) => {
-        return response.json();
-    });
-    
-
-};
-
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", ()=> {
+    let current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 }

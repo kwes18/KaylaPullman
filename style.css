@@ -9,15 +9,68 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: space-between;
     font-family: sans-serif;
     line-height: 1.5;
 }
 
 header {
-    padding: 24px;
+    padding: 16px 48px;
+    background-color: rgba(215, 123, 58, 0.85);
 }
 
-.paragraph {
+nav {
+    width: 100%;
+}
+
+.navbar>ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: none;
+}
+
+.hero {
+    background-image: url(./assets/sunset.JPG);
+    background-size: 100% auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#kayla {
+    display: block;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    margin: 24px auto;
+}
+
+.link {
+    color: black;
+    font: 24px sans-serif;
+    margin: 0 auto;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.link.active {
+    color: #9cb1c2;
+    font: 24px sans-serif;
+    margin: 0 auto;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.paragraph, ul.center {
     width: auto;
     height: auto;
     padding: 24px;
@@ -33,9 +86,10 @@ h1 {
     text-align: center;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     padding: 24px;
-    padding-bottom: 0;
+    padding-top: 0;
     margin: 0;
     font-weight: 600;
+    background-color: rgba( 156, 177, 194, 0.0);
 }
 
 h3 {
@@ -57,65 +111,10 @@ h3 {
     cursor: pointer;
 }
 
-#kayla {
-    display: block;
-    border: 2px solid black;
-    border-radius: 8px;
-    width: 200px;
-    height: 200px;
-    margin: 16px auto;
-}
-
-header {
-    padding: 16px 48px;
-    background-color: rgba(215, 123, 58, 0.85);
-}
-
-nav {
-    width: 100%;
-    height: auto;   
-}
-
-.navbar>ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.hero {
-    background-image: url(./assets/sunset.JPG);
-    background-size: 100% auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.link {
-    color: black;
-    font: 24px sans-serif;
-    margin: 0 auto;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.link:hover {
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.link:active {
-    color: #9cb1c2;
-    font: 24px sans-serif;
-    margin: 0 auto;
-    font-weight: 600;
-    text-decoration: none;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
 footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 8px;
     margin: 0px;
     background-color: rgba( 156, 177, 194, 0.85);
@@ -125,14 +124,14 @@ footer>ul {
     list-style: none;
     color: black;
     margin: 8px;
+    padding-inline-start: 0;
 }
 
 .icon {
-    width: 32px;
+    width: 24px;
     height: auto;
     padding: 8px;
     padding-bottom: 0px;
-    margin-bottom: -4px;
 }
 
 .copy {
