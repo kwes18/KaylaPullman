@@ -1,164 +1,171 @@
 body,
 html {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
-    font-family: sans-serif;
-    line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  font-family: sans-serif;
+  line-height: 1.5;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
-    padding: 16px 48px;
-    background-color: rgba(215, 123, 58, 0.85);
+  padding: 16px 48px;
+  background-color: rgba(215, 123, 58, 0.85);
 }
 
 nav {
-    width: 100%;
+  width: 100%;
 }
 
-.navbar>ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    max-width: none;
+.navbar > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: none;
 }
 
 .hero {
-    background-image: url(./assets/sunset.JPG);
-    background-size: 100% auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(./assets/sunset.JPG);
+  background-size: 100% auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .custom-hero {
-    background-image: url(./assets/neon_planet.png);
-    background-size: 100% auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 312px;
+  background-image: url(./assets/neon_planet.png);
+  background-size: 100% auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 312px;
 }
 
 #kayla {
-    display: block;
-    border: 2px solid black;
-    border-radius: 8px;
-    width: 200px;
-    height: 200px;
-    margin: 24px auto;
+  display: block;
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  margin: 24px auto;
 }
 
 .link {
-    color: black;
-    font: 24px sans-serif;
-    margin: 0 auto;
-    font-weight: 600;
-    text-decoration: none;
+  color: black;
+  font: 24px sans-serif;
+  margin: 0 auto;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .link:hover {
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .link.active {
-    color: #9cb1c2;
-    font: 24px sans-serif;
-    margin: 0 auto;
-    font-weight: 600;
-    text-decoration: none;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #9cb1c2;
+  font: 24px sans-serif;
+  margin: 0 auto;
+  font-weight: 600;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .project-link {
-    font: 20px sans-serif;
-    color: #024dbb;
-    text-decoration: none;
-    margin: 0 auto;
+  font: 20px sans-serif;
+  color: #024dbb;
+  text-decoration: none;
+  margin: 0 auto;
 }
 
 .project-link:hover {
-    color: #cf4653;
+  color: #cf4653;
 }
 
-.paragraph, ul.center {
-    width: auto;
-    height: auto;
-    padding: 24px;
-    margin: 10px auto;
-    font-size: medium; 
+.paragraph,
+ul.center {
+  width: auto;
+  height: auto;
+  padding: 24px;
+  margin: 10px auto;
+  font-size: medium;
 }
 
-p, ul {
-     max-width: 800px;
+p,
+ul {
+  max-width: 800px;
 }
 
 h1 {
-    text-align: center;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-    padding: 24px;
-    padding-top: 0;
-    margin: 0;
-    font-weight: 600;
-    background-color: rgba( 156, 177, 194, 0.0);
+  text-align: center;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  padding: 24px;
+  padding-top: 0;
+  margin: 0;
+  font-weight: 600;
+  background-color: rgba(156, 177, 194, 0);
 }
 
 h3 {
-    background-color: rgba(215, 123, 58, 0.85);
-    text-align: center;
-    padding: 16px;
-    margin: 0
+  background-color: rgba(215, 123, 58, 0.85);
+  text-align: center;
+  padding: 16px;
+  margin: 0;
 }
-    
+
 #up {
-    position: fixed;
-    right: 8px;
-    top: 75%;
-    width: 48px;
-    height: auto;
+  position: fixed;
+  right: 8px;
+  top: 75%;
+  width: 48px;
+  height: auto;
 }
 
 .button-up {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 8px;
-    margin: 0px;
-    background-color: rgba( 156, 177, 194, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  margin: 0px;
+  background-color: rgba(156, 177, 194, 0.85);
 }
 
-footer>ul {
-    list-style: none;
-    color: black;
-    margin: 8px;
-    padding-inline-start: 0;
+footer > ul {
+  list-style: none;
+  color: black;
+  margin: 8px;
+  padding-inline-start: 0;
 }
 
 .icon {
-    width: 24px;
-    height: auto;
-    padding: 8px;
-    padding-bottom: 0px;
+  width: 24px;
+  height: auto;
+  padding: 8px;
+  padding-bottom: 0px;
 }
 
 .copy {
-    text-align: center;
-    display: block;
-    width: 100%;
-    margin-bottom: 8px;
-    margin-top: 16px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  margin-top: 16px;
 }
-

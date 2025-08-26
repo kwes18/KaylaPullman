@@ -1,0 +1,7 @@
+.link-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 768px;
+}
